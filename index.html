@@ -1,0 +1,1048 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIGxP Advisory | Pharmaceutical AI Governance Consulting</title>
+    <meta name="description" content="Expert AI governance consulting for pharmaceutical companies. FDA compliance, EU AI Act readiness, regulatory submissions. 20 years biostatistics experience.">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --navy: #1a3a52;
+            --navy-light: #2c4c64;
+            --green: #7a9b76;
+            --gray: #5a6c7d;
+            --gray-light: #8a9aa8;
+            --cream: #f8f9fa;
+            --white: #ffffff;
+        }
+        
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            color: var(--navy);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        /* Typography */
+        h1, h2, h3 {
+            font-weight: 600;
+            line-height: 1.2;
+        }
+        
+        h1 {
+            font-size: 3.5em;
+            letter-spacing: 2px;
+            margin-bottom: 0.3em;
+        }
+        
+        h2 {
+            font-size: 2.2em;
+            letter-spacing: 1px;
+            margin-bottom: 0.5em;
+        }
+        
+        h3 {
+            font-size: 1.4em;
+            letter-spacing: 0.5px;
+            margin-bottom: 0.3em;
+        }
+        
+        p {
+            font-size: 1.05em;
+            margin-bottom: 1em;
+            color: var(--gray);
+        }
+        
+        /* Header/Navigation */
+        header {
+            background: var(--white);
+            padding: 20px 0;
+            border-bottom: 1px solid #e9ecef;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo-container {
+            text-align: left;
+        }
+        
+        .logo-main {
+            font-size: 32px;
+            font-weight: 600;
+            color: var(--navy);
+            letter-spacing: 2px;
+            line-height: 1;
+        }
+        
+        .logo-main .x {
+            color: var(--green);
+            margin: 0 2px;
+        }
+        
+        .logo-divider {
+            width: 50px;
+            height: 2px;
+            background: var(--green);
+            margin: 6px 0;
+        }
+        
+        .logo-sub {
+            font-size: 13px;
+            color: var(--gray);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-weight: 400;
+        }
+        
+        .header-cta {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+        
+        .header-cta a {
+            text-decoration: none;
+            color: var(--navy);
+            font-size: 0.95em;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .header-cta a:hover {
+            color: var(--green);
+        }
+        
+        .btn-primary {
+            background: var(--navy);
+            color: var(--white) !important;
+            padding: 12px 28px;
+            border-radius: 4px;
+            font-size: 0.95em;
+            text-decoration: none;
+            display: inline-block;
+            transition: background 0.3s;
+            border: 2px solid var(--navy);
+        }
+        
+        .btn-primary:hover {
+            background: var(--navy-light);
+            border-color: var(--navy-light);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: var(--navy) !important;
+            padding: 12px 28px;
+            border-radius: 4px;
+            font-size: 0.95em;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s;
+            border: 2px solid var(--navy);
+        }
+        
+        .btn-secondary:hover {
+            background: var(--navy);
+            color: var(--white) !important;
+        }
+        
+        /* Sections */
+        section {
+            padding: 100px 0;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 180px 0 120px;
+            text-align: center;
+            margin-top: 80px;
+        }
+        
+        .hero h1 {
+            color: var(--navy);
+            max-width: 900px;
+            margin: 0 auto 20px;
+        }
+        
+        .hero .tagline {
+            font-size: 1.3em;
+            color: var(--gray);
+            margin-bottom: 15px;
+            font-weight: 400;
+            letter-spacing: 0.5px;
+        }
+        
+        .hero .subtitle {
+            font-size: 1.15em;
+            color: var(--gray-light);
+            max-width: 700px;
+            margin: 0 auto 40px;
+            line-height: 1.7;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 40px;
+        }
+        
+        /* Credentials Bar */
+        .credentials {
+            background: var(--navy);
+            color: var(--white);
+            padding: 40px 0;
+        }
+        
+        .credentials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            text-align: center;
+        }
+        
+        .credential-item {
+            padding: 10px;
+        }
+        
+        .credential-icon {
+            font-size: 2em;
+            margin-bottom: 10px;
+            color: var(--green);
+        }
+        
+        .credential-title {
+            font-size: 0.95em;
+            font-weight: 600;
+            margin-bottom: 5px;
+            letter-spacing: 0.5px;
+        }
+        
+        .credential-detail {
+            font-size: 0.85em;
+            color: #b8c5d0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        }
+        
+        /* Who We Help */
+        .who-we-help {
+            background: var(--white);
+        }
+        
+        .who-we-help h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .who-intro {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 60px;
+            font-size: 1.15em;
+            color: var(--gray);
+        }
+        
+        .help-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+        
+        .help-item {
+            text-align: left;
+        }
+        
+        .help-item h3 {
+            color: var(--navy);
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--green);
+            display: inline-block;
+        }
+        
+        .help-item ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .help-item li {
+            padding: 8px 0;
+            color: var(--gray);
+            font-size: 1em;
+            position: relative;
+            padding-left: 25px;
+        }
+        
+        .help-item li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--green);
+            font-weight: bold;
+        }
+        
+        /* Services */
+        .services {
+            background: var(--cream);
+        }
+        
+        .services h2 {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 40px;
+        }
+        
+        .service-card {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 8px;
+            border: 1px solid #e9ecef;
+            transition: all 0.3s;
+        }
+        
+        .service-card:hover {
+            box-shadow: 0 8px 24px rgba(26, 58, 82, 0.1);
+            transform: translateY(-4px);
+        }
+        
+        .service-tier {
+            font-size: 0.75em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--green);
+            font-weight: 600;
+            margin-bottom: 15px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        }
+        
+        .service-card h3 {
+            color: var(--navy);
+            margin-bottom: 15px;
+        }
+        
+        .service-card p {
+            font-size: 0.95em;
+            margin-bottom: 20px;
+        }
+        
+        .service-price {
+            font-size: 1.1em;
+            font-weight: 600;
+            color: var(--navy);
+            margin: 20px 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        }
+        
+        .service-features {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+        
+        .service-features li {
+            padding: 6px 0;
+            font-size: 0.9em;
+            color: var(--gray);
+            position: relative;
+            padding-left: 20px;
+        }
+        
+        .service-features li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--green);
+            font-weight: bold;
+        }
+        
+        /* Process */
+        .process {
+            background: var(--white);
+        }
+        
+        .process h2 {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+        
+        .process-step {
+            text-align: center;
+            position: relative;
+        }
+        
+        .step-number {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: var(--navy);
+            color: var(--white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5em;
+            font-weight: 600;
+            margin: 0 auto 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        }
+        
+        .process-step h3 {
+            margin-bottom: 15px;
+        }
+        
+        .process-step p {
+            font-size: 0.95em;
+        }
+        
+        /* About */
+        .about {
+            background: var(--cream);
+        }
+        
+        .about-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .about h2 {
+            margin-bottom: 30px;
+        }
+        
+        .about p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+        
+        .expertise-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .expertise-item {
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .expertise-number {
+            font-size: 2.5em;
+            font-weight: 600;
+            color: var(--navy);
+            margin-bottom: 10px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        }
+        
+        .expertise-label {
+            font-size: 0.9em;
+            color: var(--gray);
+        }
+        
+        /* CTA Section */
+        .cta {
+            background: var(--navy);
+            color: var(--white);
+            text-align: center;
+            padding: 100px 0;
+        }
+        
+        .cta h2 {
+            color: var(--white);
+            margin-bottom: 20px;
+        }
+        
+        .cta p {
+            color: #b8c5d0;
+            font-size: 1.15em;
+            max-width: 700px;
+            margin: 0 auto 40px;
+        }
+        
+        .cta .btn-primary {
+            background: var(--white);
+            color: var(--navy) !important;
+            border-color: var(--white);
+        }
+        
+        .cta .btn-primary:hover {
+            background: var(--green);
+            color: var(--white) !important;
+            border-color: var(--green);
+        }
+        
+        /* Contact */
+        .contact {
+            background: var(--white);
+            padding: 80px 0;
+        }
+        
+        .contact-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .contact h2 {
+            margin-bottom: 40px;
+        }
+        
+        .contact-methods {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin: 50px 0;
+        }
+        
+        .contact-method {
+            text-align: center;
+        }
+        
+        .contact-icon {
+            font-size: 2em;
+            color: var(--green);
+            margin-bottom: 15px;
+        }
+        
+        .contact-method h3 {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+        
+        .contact-method a {
+            color: var(--navy);
+            text-decoration: none;
+            font-size: 1em;
+            transition: color 0.3s;
+        }
+        
+        .contact-method a:hover {
+            color: var(--green);
+        }
+        
+        .contact-method p {
+            font-size: 0.95em;
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--navy);
+            color: var(--white);
+            padding: 40px 0 20px;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 40px;
+            text-align: center;
+        }
+        
+        .footer-logo {
+            margin-bottom: 20px;
+        }
+        
+        .footer-logo-main {
+            font-size: 28px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            color: var(--white);
+        }
+        
+        .footer-logo-main .x {
+            color: var(--green);
+        }
+        
+        .footer-divider {
+            width: 50px;
+            height: 2px;
+            background: var(--green);
+            margin: 8px auto;
+        }
+        
+        .footer-logo-sub {
+            font-size: 11px;
+            color: #b8c5d0;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        
+        .footer-info {
+            margin: 30px 0;
+            color: #b8c5d0;
+            font-size: 0.9em;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        }
+        
+        .footer-info a {
+            color: var(--white);
+            text-decoration: none;
+        }
+        
+        .footer-info a:hover {
+            color: var(--green);
+        }
+        
+        .footer-bottom {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.85em;
+            color: #8a9aa8;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5em;
+            }
+            
+            h2 {
+                font-size: 1.8em;
+            }
+            
+            .hero {
+                padding: 140px 0 80px;
+            }
+            
+            section {
+                padding: 60px 0;
+            }
+            
+            .container {
+                padding: 0 20px;
+            }
+            
+            .header-content {
+                padding: 0 20px;
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            .header-cta {
+                flex-direction: column;
+                width: 100%;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+            }
+            
+            .btn-primary, .btn-secondary {
+                width: 100%;
+                text-align: center;
+            }
+            
+            .credentials-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .services-grid,
+            .process-steps,
+            .help-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <div class="logo-main">
+                    AIG<span class="x">×</span>P
+                </div>
+                <div class="logo-divider"></div>
+                <div class="logo-sub">Advisory</div>
+            </div>
+            <div class="header-cta">
+                <a href="#services">Services</a>
+                <a href="#about">About</a>
+                <a href="#contact" class="btn-primary">Schedule Assessment</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="tagline">Pharmaceutical AI Governance</div>
+            <h1>Navigate FDA & EU AI Act Compliance with Confidence</h1>
+            <p class="subtitle">
+                Expert guidance for small and medium pharmaceutical companies implementing 
+                AI governance frameworks that ensure regulatory compliance and business success.
+            </p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn-primary">Schedule Free Assessment</a>
+                <a href="#services" class="btn-secondary">Explore Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Credentials Bar -->
+    <section class="credentials">
+        <div class="container">
+            <div class="credentials-grid">
+                <div class="credential-item">
+                    <div class="credential-icon">🎓</div>
+                    <div class="credential-title">20 Years</div>
+                    <div class="credential-detail">Pharmaceutical Biostatistics</div>
+                </div>
+                <div class="credential-item">
+                    <div class="credential-icon">🎤</div>
+                    <div class="credential-title">Conference Chair</div>
+                    <div class="credential-detail">AI in Pharma Development</div>
+                </div>
+                <div class="credential-item">
+                    <div class="credential-icon">👨‍🏫</div>
+                    <div class="credential-title">Teaching Faculty</div>
+                    <div class="credential-detail">AI Governance Courses</div>
+                </div>
+                <div class="credential-item">
+                    <div class="credential-icon">🔬</div>
+                    <div class="credential-title">AI Systems</div>
+                    <div class="credential-detail">Built for Clinical Trials</div>
+                </div>
+                <div class="credential-item">
+                    <div class="credential-icon">📊</div>
+                    <div class="credential-title">Statistical Validation</div>
+                    <div class="credential-detail">Model Assessment Expert</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who We Help -->
+    <section class="who-we-help" id="who-we-help">
+        <div class="container">
+            <h2>Helping Pharmaceutical Companies Implement AI with Confidence</h2>
+            <p class="who-intro">
+                With deep biostatistics expertise and hands-on AI systems development, 
+                we help pharmaceutical companies navigate the complex landscape of AI governance 
+                and regulatory compliance.
+            </p>
+            
+            <div class="help-grid">
+                <div class="help-item">
+                    <h3>Navigate Regulations</h3>
+                    <ul>
+                        <li>FDA AI guidance interpretation</li>
+                        <li>EU AI Act compliance roadmaps</li>
+                        <li>Global regulatory coordination</li>
+                        <li>Risk classification frameworks</li>
+                        <li>Submission strategy development</li>
+                    </ul>
+                </div>
+                
+                <div class="help-item">
+                    <h3>Implement Governance</h3>
+                    <ul>
+                        <li>AI governance frameworks</li>
+                        <li>Policy and procedure development</li>
+                        <li>Model validation protocols</li>
+                        <li>Risk management systems</li>
+                        <li>Documentation standards</li>
+                    </ul>
+                </div>
+                
+                <div class="help-item">
+                    <h3>Ensure Compliance</h3>
+                    <ul>
+                        <li>Pre-submission readiness audits</li>
+                        <li>FDA/EMA submission support</li>
+                        <li>Validation documentation</li>
+                        <li>Quality system integration</li>
+                        <li>Ongoing compliance monitoring</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2>Advisory Services</h2>
+            
+            <div class="services-grid">
+                <!-- Assessment -->
+                <div class="service-card">
+                    <div class="service-tier">Getting Started</div>
+                    <h3>AI Readiness Assessment</h3>
+                    <p>Rapid evaluation of your compliance gaps and strategic roadmap for AI governance implementation.</p>
+                    <div class="service-price">Complimentary for Course Attendees</div>
+                    <ul class="service-features">
+                        <li>60-minute consultation</li>
+                        <li>Current state analysis</li>
+                        <li>Gap identification</li>
+                        <li>Prioritized recommendations</li>
+                        <li>Professional report</li>
+                    </ul>
+                </div>
+
+                <!-- Governance Framework -->
+                <div class="service-card">
+                    <div class="service-tier">Implementation</div>
+                    <h3>AI Governance Framework</h3>
+                    <p>Complete governance system designed for FDA and EU AI Act compliance with proven methodologies.</p>
+                    <div class="service-price">Starting at $65,000</div>
+                    <ul class="service-features">
+                        <li>10-12 week implementation</li>
+                        <li>Policies and procedures</li>
+                        <li>30+ customized templates</li>
+                        <li>Validation protocols</li>
+                        <li>Training materials</li>
+                        <li>FDA/EMA readiness</li>
+                    </ul>
+                </div>
+
+                <!-- Clinical Trial AI -->
+                <div class="service-card">
+                    <div class="service-tier">Implementation</div>
+                    <h3>Clinical Trial AI Optimization</h3>
+                    <p>Implement AI in clinical trials with proper governance, validation, and regulatory strategy.</p>
+                    <div class="service-price">Starting at $75,000</div>
+                    <ul class="service-features">
+                        <li>8-10 week engagement</li>
+                        <li>Use case validation</li>
+                        <li>Vendor integration oversight</li>
+                        <li>Protocol methodology</li>
+                        <li>Statistical validation</li>
+                        <li>FDA submission support</li>
+                    </ul>
+                </div>
+
+                <!-- Data Governance -->
+                <div class="service-card">
+                    <div class="service-tier">Implementation</div>
+                    <h3>Data Governance for AI</h3>
+                    <p>Transform fragmented data systems into AI-ready infrastructure with proper governance and quality controls.</p>
+                    <div class="service-price">Starting at $55,000</div>
+                    <ul class="service-features">
+                        <li>9-10 week program</li>
+                        <li>Data quality audit</li>
+                        <li>FAIR & ALCOA compliance</li>
+                        <li>Governance framework</li>
+                        <li>Integration roadmap</li>
+                    </ul>
+                </div>
+
+                <!-- Regulatory Submission -->
+                <div class="service-card">
+                    <div class="service-tier">Implementation</div>
+                    <h3>Regulatory Submission Support</h3>
+                    <p>Expert guidance for FDA/EMA submissions involving AI with comprehensive documentation and strategy.</p>
+                    <div class="service-price">Starting at $85,000</div>
+                    <ul class="service-features">
+                        <li>8-10 week preparation</li>
+                        <li>Submission strategy</li>
+                        <li>Documentation package</li>
+                        <li>Validation evidence</li>
+                        <li>Agency question support</li>
+                        <li>Meeting preparation</li>
+                    </ul>
+                </div>
+
+                <!-- Fractional Officer -->
+                <div class="service-card">
+                    <div class="service-tier">Ongoing Support</div>
+                    <h3>Fractional AI Governance Officer</h3>
+                    <p>Ongoing governance leadership without the cost of a full-time hire. Expert guidance when you need it.</p>
+                    <div class="service-price">$8,500/month</div>
+                    <ul class="service-features">
+                        <li>10-15 hours monthly</li>
+                        <li>Committee participation</li>
+                        <li>Use case reviews</li>
+                        <li>Policy updates</li>
+                        <li>Regulatory monitoring</li>
+                        <li>Executive reporting</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process -->
+    <section class="process" id="process">
+        <div class="container">
+            <h2>How We Work Together</h2>
+            
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h3>Free Assessment</h3>
+                    <p>30-minute consultation to understand your AI governance challenges and objectives.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h3>Tailored Proposal</h3>
+                    <p>Clear scope, deliverables, timeline, and investment based on your specific needs.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h3>Collaborative Implementation</h3>
+                    <p>Work closely with your team to implement proven frameworks and build internal capability.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <h3>Ongoing Support</h3>
+                    <p>Optional retainer relationships for continued guidance as regulations and needs evolve.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <h2>Recognized Expertise in AI Governance</h2>
+                <p>
+                    AIGxP Advisory was founded to address a critical gap: small and medium pharmaceutical 
+                    companies need expert guidance to navigate AI implementation, but most consulting firms 
+                    focus exclusively on large enterprises.
+                </p>
+                <p>
+                    With 20 years of biostatistics experience in pharmaceutical development and hands-on 
+                    experience building AI systems for clinical trials, we bring both technical depth and 
+                    practical regulatory knowledge to every engagement.
+                </p>
+                <p>
+                    As Conference Chair for leading AI in pharmaceutical development events and teaching 
+                    faculty for industry AI governance courses, we are recognized thought leaders helping 
+                    shape best practices across the industry.
+                </p>
+                
+                <div class="expertise-grid">
+                    <div class="expertise-item">
+                        <div class="expertise-number">20+</div>
+                        <div class="expertise-label">Years Pharma Experience</div>
+                    </div>
+                    <div class="expertise-item">
+                        <div class="expertise-number">100%</div>
+                        <div class="expertise-label">Focus on Compliance</div>
+                    </div>
+                    <div class="expertise-item">
+                        <div class="expertise-number">FDA+EU</div>
+                        <div class="expertise-label">Regulatory Expertise</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to Implement AI Governance?</h2>
+            <p>
+                Schedule a complimentary 30-minute AI readiness assessment to discuss 
+                your specific challenges and explore how we can help.
+            </p>
+            <a href="#contact" class="btn-primary">Schedule Free Assessment</a>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <h2>Let's Discuss Your AI Governance Needs</h2>
+                
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <div class="contact-icon">📧</div>
+                        <h3>Email</h3>
+                        <a href="mailto:contact@aigxpadvisory.com">contact@aigxpadvisory.com</a>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="contact-icon">📅</div>
+                        <h3>Schedule Assessment</h3>
+                        <a href="https://calendly.com/yourname" target="_blank">Book 30-Minute Call</a>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="contact-icon">📱</div>
+                        <h3>Phone</h3>
+                        <p>(555) 123-4567</p>
+                    </div>
+                </div>
+                
+                <p style="margin-top: 40px; font-size: 0.95em;">
+                    AIGxP Advisory, LLC<br>
+                    Indianapolis, Indiana
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <div class="footer-logo-main">AIG<span class="x">×</span>P</div>
+                <div class="footer-divider"></div>
+                <div class="footer-logo-sub">Advisory</div>
+            </div>
+            
+            <div class="footer-info">
+                <p>
+                    Pharmaceutical AI Governance Consulting<br>
+                    Indianapolis, Indiana
+                </p>
+                <p style="margin-top: 20px;">
+                    <a href="mailto:contact@aigxpadvisory.com">contact@aigxpadvisory.com</a> | 
+                    <a href="tel:5551234567">(555) 123-4567</a>
+                </p>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 AIGxP Advisory, LLC. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
